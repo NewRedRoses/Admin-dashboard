@@ -54,19 +54,32 @@ p {
 }
 .projects-container {
   grid-column: 2/ 5;
-}
-.project-title {
-  font-weight: 700;
   padding: 10px;
+}
+.section-title {
+  font-weight: 700;
 }
 .cards {
   display: grid;
-  gap: 40px;
+  grid-row: 2/6;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
 }
 .project-card {
   display: grid;
-  width: 1fr;
+  padding: 10px;
   border: 1px red dashed;
-  flex-direction: column;
-  gap: 10px;
+}
+.annouce-trending-sections {
+  display: grid;
+}
+.annoucements-container {
+  background-color: aquamarine;
+}
+.trending-container {
+  display: grid;
+  background-color: cornflowerblue;
+}
+.annoucements-cards {
+  /* justify-content: center; */
 }
