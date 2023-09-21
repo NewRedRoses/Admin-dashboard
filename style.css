@@ -35,3 +35,38 @@ p {
   grid-column: 2/ 3;
   /* text-align: start; */
 }
+.header-container {
+  display: grid;
+  grid-column: 2 / 6;
+  background-color: azure;
+}
+.header-top,
+.header-bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+}
+.main-content-container {
+  display: grid;
+  background-color: blanchedalmond;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-column: 2 / 6;
+  grid-row: 2 / 6;
+}
+.projects-container {
+  grid-column: 2/ 5;
+}
+.project-title {
+  font-weight: 700;
+  padding: 10px;
+}
+.cards {
+  display: grid;
+  gap: 40px;
+}
+.project-card {
+  display: grid;
+  width: 1fr;
+  border: 1px red dashed;
+  flex-direction: column;
+  gap: 10px;
+}
