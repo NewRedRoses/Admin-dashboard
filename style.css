@@ -16,15 +16,22 @@ div {
 }
 .sidebar-container {
   display: grid;
+  align-items: center;
   grid-template-rows: repeat(auto-fit, 100px);
   grid-row: 1 / 7;
-  gap: 5%;
+  gap: 40px;
   background-color: beige;
 }
 .sidebar-title {
-  display: flex;
+  display: grid;
+  text-align: center;
   justify-content: center;
   align-content: center;
+  gap: 10px;
+}
+.sidebar-item {
+  display: flex;
+  align-items: center;
   gap: 10px;
 }
 .sidebar-top,
@@ -73,7 +80,7 @@ div {
   padding: 10px;
   border: 1px grey solid;
 }
-.card-actions{
+.card-actions {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
@@ -85,11 +92,9 @@ div {
   background-color: aquamarine;
 }
 .trending-container {
-  display: grid;
   background-color: cornflowerblue;
 }
 .annoucements-cards {
-  /* justify-content: center; */
 }
 .trending-container {
   display: grid;
@@ -110,4 +115,7 @@ div {
   border-radius: 10px;
   width: 250px;
   gap: 10px;
+}
+.icon {
+  width: 25px;
 }
