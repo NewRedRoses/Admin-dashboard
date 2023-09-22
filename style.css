@@ -1,4 +1,4 @@
-body {
+html, body {
   margin: 0px;
 }
 .container {
@@ -8,13 +8,15 @@ body {
   grid-template-rows: repeat(5, minmax(200px, 1fr));
 }
 h1,
-p {
+p,
+div {
   margin: 0px;
+  font-size: clamp(1rem, 5vw, 1.1rem);
 }
 .sidebar-container {
   display: grid;
   grid-template-rows: repeat(auto-fit, 100px);
-  grid-row: 1 / 6;
+  grid-row: 1 / 7;
   gap: 5%;
   background-color: beige;
 }
@@ -68,7 +70,7 @@ p {
 .project-card {
   display: grid;
   padding: 10px;
-  border: 1px red dashed;
+  border: 1px grey solid;
 }
 .annouce-trending-sections {
   display: grid;
@@ -82,4 +84,24 @@ p {
 }
 .annoucements-cards {
   /* justify-content: center; */
+}
+.trending-container {
+  display: grid;
+  gap: 10px;
+  background-color: whitesmoke;
+  /* grid-template-rows: repeat(auto-fit,minmax(50px,1fr)) ; */
+}
+.trending-card img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(233, 229, 229);
+  /* border-radius: 25px; */
+}
+.trending-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 250px;
+  gap: 10px;
 }
