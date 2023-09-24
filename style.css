@@ -151,14 +151,12 @@ div {
   display: grid;
   background-color: aquamarine;
 }
-.trending-container {
-  background-color: cornflowerblue;
-}
 .annoucements-cards {
 }
 .trending-container {
   display: grid;
-  gap: 10px;
+  padding: 20px;
+  background-color: cornflowerblue;
   background-color: whitesmoke;
   /* grid-template-rows: repeat(auto-fit,minmax(50px,1fr)) ; */
 }
@@ -170,9 +168,9 @@ div {
 }
 .trending-card {
   display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.127);
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
   width: 250px;
   gap: 10px;
 }
