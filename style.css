@@ -2,9 +2,14 @@ html,
 body {
   margin: 0;
   height: 100%;
+  font-family: Roboto;
   --sidebar-color: #3b82f6;
   --main-content-color: whitesmoke;
   --global-padding: 10px;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("/Roboto/Roboto-Regular.ttf");
 }
 .container {
   display: grid;
@@ -57,6 +62,9 @@ button:hover {
   grid-row: 1 / 4;
   justify-content: center;
 }
+.title {
+  font-weight: 700;
+}
 .sidebar-title {
   display: grid;
   gap: 10px;
@@ -71,6 +79,7 @@ button:hover {
 .header-container {
   display: grid;
   padding: var(--global-padding);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.092);
   grid-column: 2 / 6;
 }
 .header-top,
