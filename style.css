@@ -40,28 +40,21 @@ li {
   color: #eff6ff;
   background-color: var(--sidebar-color);
 }
+.sidebar-content {
+  display: grid;
+  grid-row: 1 / 4;
+  justify-content: center;
+}
 .sidebar-title {
   display: grid;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
   gap: 10px;
 }
-.sidebar-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.sidebar-top,
-.sidebar-bottom {
+.sidebar-top {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
 }
-.sidebar-bottom div,
-.sidebar-top div {
-  width: 100px;
-  grid-column: 2/ 3;
-  /* text-align: start; */
+.sidebar-top ul {
+  display: inherit;
+  padding: 0;
 }
 .header-container {
   display: grid;
