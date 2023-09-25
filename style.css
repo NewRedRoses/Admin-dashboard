@@ -19,8 +19,6 @@ div {
   font-size: clamp(1rem, 5vw, 1.1rem);
 }
 .icon {
-  filter: invert(98%) sepia(0%) saturate(88%) hue-rotate(186deg)
-    brightness(118%) contrast(100%);
   width: 20px;
 }
 li {
@@ -30,6 +28,20 @@ li {
   filter: invert(0%) sepia(4%) saturate(7485%) hue-rotate(207deg)
     brightness(99%) contrast(105%);
   width: 20px;
+}
+.header-bottom-right button {
+  background-color: var(--sidebar-color);
+  border: 0;
+  height: 25px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color: #eff6ff;
+  color: var(--sidebar-color);
+  border: 1px solid rgba(0, 0, 0, 0.144);
 }
 .sidebar-container {
   display: grid;
@@ -103,7 +115,7 @@ li {
 }
 .header-bottom-right {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 100px);
+  grid-template-columns: repeat(auto-fit, 70px);
   justify-content: flex-end;
   justify-items: center;
   align-items: center;
@@ -136,6 +148,7 @@ li {
   border-radius: 20px;
   padding: 40px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.049);
+  transition-duration: 1.4s;
 }
 .project-card:hover {
   top: 2.5px;
@@ -147,6 +160,7 @@ li {
 }
 .annouce-trending-sections {
   display: grid;
+  padding-top: 20px;
   grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
   align-content: space-around;
   gap: 10%;
@@ -191,5 +205,4 @@ li {
 img {
   width: 100%;
   justify-content: center;
-  margin: auto;
 }
