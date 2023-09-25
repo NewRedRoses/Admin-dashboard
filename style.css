@@ -37,7 +37,7 @@ li {
 .header-bottom-right button {
   background-color: var(--sidebar-color);
   border: 0;
-  height: 25px;
+  height: 35px;
   border-radius: 12px;
   color: #fff;
   font-weight: 600;
@@ -75,6 +75,9 @@ button:hover {
 .sidebar-top ul {
   display: inherit;
   padding: 0;
+}
+.sidebar-container li:hover {
+  font-weight: 800;
 }
 .header-container {
   display: grid;
@@ -219,5 +222,6 @@ button:hover {
 }
 img {
   width: 100%;
+  height: auto;
   justify-content: center;
 }
