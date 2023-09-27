@@ -160,7 +160,8 @@ button:hover {
   position: relative;
   background-color: #fff;
   gap: 10px;
-  border-radius: 20px;
+  border-radius: 0 20px 20px 0;
+  border-left: 10px solid orange;
   padding: 40px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.049);
   transition-duration: 1.4s;
