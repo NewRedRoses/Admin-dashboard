@@ -166,12 +166,13 @@ button:hover {
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.049);
   transition-duration: 1.4s;
 }
+.project-card:active{
+top: 2.5px;
+}
 .project-name {
   font-weight: 700;
 }
-.project-card:hover {
-  top: 2.5px;
-}
+
 .card-actions {
   display: flex;
   justify-content: flex-end;
